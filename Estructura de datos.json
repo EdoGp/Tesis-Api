@@ -1,0 +1,62 @@
+{
+    "Usuario": {
+        "nombre": "",
+        "rif": "",
+        "tipo": "",
+        "direccion": {
+            "direccion": "",
+            "ciudad": "",
+            "estado": "",
+            "pais": ""
+        },
+        "contacto": {
+            "email": "",
+            "telefono": ""
+        },
+        "afiliados": [{
+            "id": ""
+        }, {
+            "id": ""
+        }, {
+            "id": ""
+        }]
+    },
+
+    "Producto": {
+        "Producto": "",
+        "id_usuario": "",
+        "nombre": "",
+        "descripcion": "",
+        "existencia": "",
+        "costo": ""
+    },
+
+    "pedido": {
+        "id_usuario": "",
+        "id_empresa": "",
+        "Producto": [{
+            "id_producto": ""
+        }, {
+            "id_producto": ""
+        }, {
+            "id_producto": ""
+        }],
+        "ubicacion": [{
+                "latitud": "",
+                "altitud": ""
+            }, {
+                "latitud": "",
+                "altitud": ""
+            }, {
+                "latitud": "",
+                "altitud": ""
+            }
+
+        ]
+
+    }
+
+
+
+
+}
