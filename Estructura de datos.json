@@ -13,15 +13,8 @@
             "email": "",
             "telefono": ""
         },
-        "afiliados": [{
-            "id": ""
-        }, {
-            "id": ""
-        }, {
-            "id": ""
-        }]
+        "afiliados": []
     },
-
     "Producto": {
         "Producto": "",
         "id_usuario": "",
@@ -30,33 +23,10 @@
         "existencia": "",
         "costo": ""
     },
-
     "pedido": {
         "id_usuario": "",
         "id_empresa": "",
-        "Producto": [{
-            "id_producto": ""
-        }, {
-            "id_producto": ""
-        }, {
-            "id_producto": ""
-        }],
-        "ubicacion": [{
-                "latitud": "",
-                "altitud": ""
-            }, {
-                "latitud": "",
-                "altitud": ""
-            }, {
-                "latitud": "",
-                "altitud": ""
-            }
-
-        ]
-
+        "Producto": [],
+        "ubicacion": []
     }
-
-
-
-
 }

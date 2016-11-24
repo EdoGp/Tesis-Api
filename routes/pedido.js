@@ -28,7 +28,7 @@ module.exports = function(app) {
 
     app.get('/pedido/:id', function (req, res) {
         Pedido.findById(req.params.id, function(err, pedido) {
-            if (err) 
+            if (err) {
             
                 res.json({info: 'error during find Pedido', error: err});
             };
