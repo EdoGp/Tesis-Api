@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/Tesis');
+mongoose.connect('mongodb://tesis:123456@ds031601.mlab.com:31601/tesis');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
