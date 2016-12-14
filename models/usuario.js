@@ -4,6 +4,7 @@ var usuarioSchema = mongoose.Schema({
 
     "nombre": String,
     "rif": String,
+    "tipo": String,
         "direccion": {
             "direccion": String,
             "ciudad": String,
