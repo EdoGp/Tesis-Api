@@ -2,9 +2,8 @@ var mongoose = require('mongoose');
 
 var usuarioSchema = mongoose.Schema({
 
-   "nombre": String,
-        "rif": String,
-        "tipo": String,
+    "nombre": String,
+    "rif": String,
         "direccion": {
             "direccion": String,
             "ciudad": String,
@@ -14,8 +13,7 @@ var usuarioSchema = mongoose.Schema({
         "contacto": {
             "email": String,
             "telefono": String
-        },
-        "afiliados": []
+        }
 });
 
 module.exports = mongoose.model('Usuario', usuarioSchema);
