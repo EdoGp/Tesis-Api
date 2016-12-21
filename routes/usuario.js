@@ -26,15 +26,15 @@ module.exports = function(app) {
         });
     });
 
-    app.get('/usuario/:id', function (req, res) {
-        Usuario.findById(req.params.id, function(err, usuario) {
+  app.get('/usuario/:nombre', function (req, res) {
+        Usuario.findOne({nombre:req.params.nombre}, function(err, usuario) {
             if (err) 
             {
                 res.json({info: 'error during find Usuario', error: err});
             };
             if (Usuario) 
             {
-                res.json({info: 'Usuario found successfully', data: usuario});
+                    res.json({info: 'Usuario found successfully', data: usuario});     
               
             } else 
             {
