@@ -34,7 +34,7 @@ module.exports = function(app) {
             };
             if (Usuario) 
             {
-                    res.json({info: 'Usuario found successfully', data: usuario});     
+                    res.json(usuario.nombre);     
               
             } else 
             {
