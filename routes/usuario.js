@@ -26,15 +26,23 @@ module.exports = function(app) {
         });
     });
 
-  app.get('/usuario/:nombre', function (req, res) {
-        Usuario.findOne({nombre:req.params.nombre}, function(err, usuario) {
+  app.get('/usuario/:nombre/:password', function (req, res) {
+        Usuario.findOne({nombre:req.params.nombre,password:req.params.password}, function(err, usuario) {
             if (err) 
             {
                 res.json({info: 'error during find Usuario', error: err});
             };
             if (Usuario) 
             {
-                    res.json(usuario.nombre);     
+                if(Password)
+                {
+                    res.json({info: 'Usuarios found successfully',data: usuario});
+                }
+                else
+                {
+                    res.json({info: 'Password error', error: err});
+                }
+                         
               
             } else 
             {
